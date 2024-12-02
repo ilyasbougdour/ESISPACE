@@ -2,12 +2,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background:linear-gradient(to right,yellow,rgb(0, 0, 245));
+    background:linear-gradient(to right,rgb(254, 254, 122),rgb(0, 0, 234));
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@ body {
 .logo img {
     width: 120px;
     margin-bottom: 1.5rem;
-    animation: bounce 2s infinite;
+    animation: bounce 20s infinite;
 }
 
 h1 {
