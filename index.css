@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background:linear-gradient(to right,rgb(254, 254, 122),rgb(0, 0, 234));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    animation: slideUp 1.5s ease-out;
+}
+
+.content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9f4ff;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.logo img {
+    width: 120px;
+    margin-bottom: 1.5rem;
+    animation: bounce 20s infinite;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #004aad;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    animation: slideLeft 1s ease-out;
+}
+
+.highlight {
+    color: #f9c846;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    animation: fadeInText 1.5s ease-in-out;
+}
+
+.button-group {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    animation: fadeInText 1.5s ease-in-out;
+}
+
+/* Bouton unique Découvrir */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #004aad;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn i {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+    font-size: 1.2rem; /* Taille de l'icône */
+}
+
+.btn:hover {
+    background-color: #174c98;
+    transform: translateY(-3px); /* Légère élévation */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Effet de dégradé */
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #fff;
+    transition: all 0.5s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 0;
+}
+
+.btn:hover::before {
+    width: 0;
+    height: 0;
+    opacity: 1;
+}
+
+/* Ajouter une animation subtile lors du survol */
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Animation des éléments */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section image */
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    animation: zoomIn 2.5s ease-in-out;
+}
+
+.image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+    transition: transform 0.5s ease;
+}
+
+.image:hover img {
+    transform: scale(1.05);
+}
