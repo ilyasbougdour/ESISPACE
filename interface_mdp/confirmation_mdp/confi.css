@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0056b3, #ffd700);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.forgot-password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.card .description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group input {
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #0056b3;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: #aaa;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 0.75rem;
+    color: #0056b3;
+}
+
+button {
+    background: #0056b3;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #003d80;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.back-to-login {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.back-to-login:hover {
+    color: #003d80;
+}
+
+@media (max-width: 768px) {
+    .forgot-password-container {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .card h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    .back-to-login {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .forgot-password-container {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .card h1 {
+        font-size: 1.3rem;
+    }
+
+    .card .description {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
