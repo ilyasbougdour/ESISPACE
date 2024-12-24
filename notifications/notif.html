@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Notifications</title>
+    <link rel="stylesheet" href="./notif.css">
+</head>
+<body>
+    <div class="notification-container">
+        <h1>Notifications</h1>
+        <div class="notification" id="notif1">
+            <span class="icon">🔔</span>
+            <span class="message">Ceci est une notification importante.</span>
+            <button class="mark-as-read" onclick="markAsRead('notif1')">✔</button>
+        </div>
+        <div class="notification" id="notif2">
+            <span class="icon">📢</span>
+            <span class="message">Nouvelle mise à jour disponible.</span>
+            <button class="mark-as-read" onclick="markAsRead('notif2')">✔</button>
+        </div>
+        <div class="notification" id="notif3">
+            <span class="icon">📩</span>
+            <span class="message">Vous avez reçu un nouveau message.</span>
+            <button class="mark-as-read" onclick="markAsRead('notif3')">✔</button>
+        </div>
+    </div>
+
+    <script>
+        function markAsRead(notificationId) {
+            const notification = document.getElementById(notificationId);
+            if (notification) {
+                notification.style.opacity = '0';
+                setTimeout(() => notification.style.display = 'none', 300);
+            }
+        }
+    </script>
+</body>
+</html>
