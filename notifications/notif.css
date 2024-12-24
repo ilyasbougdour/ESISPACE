@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(254, 254, 122), rgb(0, 0, 234));
+    color: #2201ff;
+}
+
+.notification-container {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.notification {
+    background-color: rgb(254, 254, 122);
+    color: #2201ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.notification .message {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.notification .mark-as-read {
+    background-color: #2201ff;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.notification .mark-as-read:hover {
+    background-color: #1a0099;
+}
