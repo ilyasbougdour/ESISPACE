@@ -59,3 +59,42 @@ body {
 .notification .mark-as-read:hover {
     background-color: #1a0099;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .notification-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .notification {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .notification .mark-as-read {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .notification-container {
+        padding: 10px;
+    }
+
+    .notification {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .notification .icon {
+        font-size: 18px;
+    }
+}
