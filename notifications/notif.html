@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Notifications</title>
+    <title>Notifications utilisateur</title>
     <link rel="stylesheet" href="./notif.css">
 </head>
 <body>
     <div class="notification-container">
-        <h1>Notifications</h1>
+        <h1>Vos Notifications</h1>
         <div class="notification" id="notif1">
             <span class="icon">🔔</span>
             <span class="message">Ceci est une notification importante.</span>
@@ -25,15 +25,6 @@
             <button class="mark-as-read" onclick="markAsRead('notif3')">✔</button>
         </div>
     </div>
-
-    <script>
-        function markAsRead(notificationId) {
-            const notification = document.getElementById(notificationId);
-            if (notification) {
-                notification.style.opacity = '0';
-                setTimeout(() => notification.style.display = 'none', 300);
-            }
-        }
-    </script>
+    <script src="./notif.js"></script>
 </body>
 </html>
