@@ -118,3 +118,96 @@ input:focus, textarea:focus {
     padding-left: 20px;
     color: #333;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .community-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    input, textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .btn-create {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .message {
+        font-size: 13px;
+    }
+
+    .community-preview h2 {
+        font-size: 16px;
+    }
+
+    .preview-name {
+        font-size: 16px;
+    }
+
+    .preview-description {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .community-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    input, textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .btn-create {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+
+    .community-preview {
+        padding-top: 15px;
+    }
+
+    .community-preview h2 {
+        font-size: 14px;
+    }
+
+    .preview-name {
+        font-size: 14px;
+    }
+
+    .preview-description {
+        font-size: 12px;
+    }
+}
