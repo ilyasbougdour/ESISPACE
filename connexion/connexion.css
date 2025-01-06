@@ -34,7 +34,30 @@ a {
     margin: 15px 0;
 }
 
+.submit-btn {
+    background-color: rgb(254, 254, 122);
+    color: #2201ff;
 
+}
+.submit-btn {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: rgb(8, 39, 239);            
+   border-radius: 10px;
+   display: block;
+   cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color:  yellow;
+    background-color:  #2201ff;
+    text-decoration: none;
+}
 .btn-grad {
     background-color: rgb(254, 254, 122);
     color: #2201ff;
