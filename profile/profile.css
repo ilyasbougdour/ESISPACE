@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-emoji {
+    font-size: 80px;
+    background: linear-gradient(135deg, #FFC300, #3C91E6);
+    color: white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 26px;
+    color: #3C91E6;
+    font-weight: bold;
+}
+
+.profile-details p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 30px;
+    position: relative;
+}
+
+.profile-details p i.icon {
+    position: absolute;
+    left: 0;
+    color: #FFC300;
+    font-size: 18px;
+}
+
+.profile-stats {
+    margin: 20px 0;
+    text-align: left;
+    font-size: 16px;
+}
+
+.profile-stats h2 {
+    color: #3C91E6;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.profile-actions .btn {
+    background-color: #3C91E6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.profile-actions .btn:hover {
+    background-color: #2a6bbd;
+    transform: scale(1.05);
+}
+
+.profile-actions .btn-danger {
+    background-color: #FFC300;
+    color: #3C91E6;
+}
+
+.profile-actions .btn-danger:hover {
+    background-color: #e6b000;
+}
