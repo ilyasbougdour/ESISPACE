@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- My CSS -->
     <link rel="stylesheet" href="./navigation.css">
-	<link rel="stylesheet" href="./profile/profile.css">
+    <link rel="stylesheet" href="../profile/profile.css">
 
     <title>ESISPACE</title>
 </head>
@@ -88,17 +88,82 @@
             </form>
             <input type="checkbox" id="switch-mode" hidden>
             <label for="switch-mode" class="switch-mode"></label>
-            
             <a href="#" class="profile">
-                <div class="profile-emoji">👤</div>
+                <div class="profile-emoji">
+                    <img src="../public/assert/14.png" alt="">
+                </div>
             </a>
         </nav>
         <!-- NAVBAR -->
 
-     
-    </section>
-    <!-- CONTENT -->
+        <!-- PROFILE SECTION -->
+        <!-- PROFILE SECTION -->*
+
+        <!-- MAIN -->
+        <main>
+           <div class="container">
+    <div class="profile-card">
+        <img src="../public/assert/14.png" alt="Profile Picture">
+        <h2>Ilyas Bougdour</h2>
+        <p>Jeune Dévlopeur </p>
+        <button id="follow-button">Follow</button>
+        <div class="progress-bar">
+            <div></div>
+        </div>
+        <p>Bio</p>
+        <p>Passionné par le développement logiciel et les technologies émergentes.</p>
+    </div>
+
+    <div class="form-card">
+        <h3>Account Details</h3>
+        <form>
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Sierra">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Brooks">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="sierra@example.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city">
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select id="state">
+                    <option>Choose...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zip">Télephone</label>
+                <input type="text" id="zip">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description"></textarea>
+            </div>
+        </form>
+    </div>
+</div>
+
+        </main>
+        <!-- MAIN -->
+
 
     <script src="./navigation.js"></script>
+    <script src="../profile/profile.js"></script>
 </body>
 </html>
