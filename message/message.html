@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notifications utilisateur</title>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./notif.css">
+    <link rel="stylesheet" href="message.css">
     <link rel="stylesheet" href="../interface_navigation/navigation.css">
 </head>
 <body>
@@ -80,28 +80,29 @@
         <section id="content">
             <!-- NAVBAR -->
            
-        </div>
-    <div class="notification-container">
-        <h1>Vos Notifications</h1>
-        <div class="notification" id="notif1">
-            <span class="icon">🔔</span>
-            <span class="message">Ahmed a publié un nouveau poste.</span>
-            <button class="mark-as-read" onclick="markAsRead('notif1')">✔</button>
-        </div>
-        <div class="notification" id="notif2">
-            <span class="icon">📢</span>
-            <span class="message">Nouvelle mise à jour disponible.</span>
-            <button class="mark-as-read" onclick="markAsRead('notif2')">✔</button>
-        </div>
-        <div class="notification" id="notif3">
-            <span class="icon">📩</span>
-            <span class="message">Vous avez reçu un nouveau message.</span>
-            <button class="mark-as-read" onclick="markAsRead('notif3')">✔</button>
-        </div>
-    </div>
-
-
-    <script src="./notif.js"></script>
-    <script src="../interface_navigation/navigation.js"></script>
+            <div class="chat-container">
+                <!-- Fenêtre de chat -->
+                <div class="chat-main">
+                    <div class="chat-header">
+                        <h3>Chat</h3>
+                    </div>
+                    <div class="chat-messages">
+                        <!-- Historique des messages -->
+                        <div class="message received">
+                            <p>Bonjour, comment ça va ?</p>
+                        </div>
+                        <div class="message sent">
+                            <p>Très bien, merci ! Et toi ?</p>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="message-input" placeholder="Écrire un message...">
+                        <button id="send-button"><i class='bx bx-send'></i></button>
+                    </div>
+                </div>
+            </div>
+            <script src="../interface_navigation/navigation.js"></script>
+            <script src="./message.js"></script>
 </body>
 </html>
+        
