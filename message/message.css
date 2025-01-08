@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+}
+
+.chat-container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(254, 254, 122), rgb(0, 0, 234));
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 3px solid #ffce26;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.chat-main .chat-header {
+    padding: 20px;
+    background-color: #ffce26;
+    border-bottom: 2px solid #ffd95e;
+    color: #1d3557;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fdfdf0;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message.sent {
+    align-self: flex-end;
+    background-color: #3c91e6;
+    color: white;
+}
+
+.message.received {
+    align-self: flex-start;
+    background-color: #fff3cd;
+    color: #333;
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    border-top: 2px solid #ffd95e;
+    background-color: #fffae5;
+    border-radius: 0 0 15px 15px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ffd95e;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    margin-right: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input button {
+    background-color: #3c91e6;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background 0.3s;
+    box-shadow: 0 5px 15px rgba(60, 145, 230, 0.4);
+}
+
+.chat-input button:hover {
+    background-color: #2b6caa;
+}
