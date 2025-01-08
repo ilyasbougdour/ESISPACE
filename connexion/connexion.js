@@ -1,16 +1,11 @@
-const signUpBtn = document.getElementById('signUp');
-const signInBtn = document.getElementById('signIn');
 const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
 
-// Action pour Sign Up
-signUpBtn.addEventListener('click', () => {
-    alert("Votre inscription a été bien enregistrée !");
-    container.classList.add('right-panel-active');
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
 });
 
-// Action pour Sign In
-signInBtn.addEventListener('click', () => {
-    alert("Votre connexion a réussi !");
-    container.classList.remove('right-panel-active');
-    window.location.href = '../interface_navigation/navigation.html'; // Chemin vers la page admin
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
 });
