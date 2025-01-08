@@ -65,6 +65,8 @@ body {
 	overflow-x: hidden;
 	scrollbar-width: none;
 }
+
+
 #sidebar::--webkit-scrollbar {
 	display: none;
 }
@@ -104,7 +106,7 @@ body {
 	background: transparent;
 	margin-left: 6px;
 	border-radius: 48px 0 0 48px;
-	padding: 4px;
+	
 }
 #sidebar .side-menu li.active {
 	background: var(--grey);
@@ -147,7 +149,7 @@ body {
 }
 #sidebar .side-menu.top li.active a {
 	background: linear-gradient(to right, rgb(255 255 150), rgb(252 252 206));
-	color: var(--blue);
+
 }
 #sidebar.hide .side-menu li a {
 	

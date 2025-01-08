@@ -1,7 +1,8 @@
 body {
+    background: linear-gradient(to right, rgb(254, 254, 122), rgb(0, 0, 234));
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background : white ;
+   
     color: #2201ff;
     display: flex;
     justify-content: center;
@@ -19,7 +20,23 @@ body {
     text-align: center;
     animation: fadeIn 1s ease-in-out;
 }
-
+#content nav {
+    background: linear-gradient(to right, rgb(254, 254, 122), rgb(0, 0, 234));
+    margin-bottom: 239%;
+    margin-right: -223%;
+    margin-left: -90%;
+    height: 56px;
+    padding: 0 24px;
+    display: flex
+;
+    align-items: center;
+    grid-gap: 24px;
+    font-family: var(--lato);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
