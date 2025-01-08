@@ -1,11 +1,11 @@
-const signUpBtn = document.getElementById('signUp');
-const signInBtn = document.getElementById('signIn');
 const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
 
-signUpBtn.addEventListener('click', () => {
-    container.classList.add('right-panel-active');
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
 });
 
-signInBtn.addEventListener('click', () => {
-    container.classList.remove('right-panel-active');
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
 });
