@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notifications utilisateur</title>
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./notif.css">
+    <title>Journal Universitaire</title>
+    <link rel="stylesheet" href="./postes.css">
     <link rel="stylesheet" href="../interface_navigation/navigation.css">
 </head>
 <body>
-
-   
+    
     <div>
 
         <!-- SIDEBAR -->
@@ -47,15 +45,15 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#posts">
+                    <a href="../creation/creation.html">
                         <i class='bx bxs-pencil'></i>
                         <span class="text">Création de poste</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#customization">
+                    <a href="../interface_postes/postes.html">
                         <i class='bx bxs-paint'></i>
-                        <span class="text">Pérsonnalisation</span>
+                        <span class="text">Postes</span>
                     </a>
                 </li>
             </ul>
@@ -69,39 +67,58 @@
                 <li>
                     <a href="../connexion/connexion.html" class="logout">
                         <i class='bx bxs-log-out-circle'></i>
+                        <span class="text">Logout</span>
                         
                     </a>
                 </li>
             </ul>
         </section>
-        <!-- SIDEBAR -->
-    
-        <!-- CONTENT -->
-        <section id="content">
-            <!-- NAVBAR -->
-           
-        </div>
-    <div class="notification-container">
-        <h1>Vos Notifications</h1>
-        <div class="notification" id="notif1">
-            <span class="icon">🔔</span>
-            <span class="message">Ahmed a publié un nouveau poste.</span>
-            <button class="mark-as-read" onclick="markAsRead('notif1')">✔</button>
-        </div>
-        <div class="notification" id="notif2">
-            <span class="icon">📢</span>
-            <span class="message">Nouvelle mise à jour disponible.</span>
-            <button class="mark-as-read" onclick="markAsRead('notif2')">✔</button>
-        </div>
-        <div class="notification" id="notif3">
-            <span class="icon">📩</span>
-            <span class="message">Vous avez reçu un nouveau message.</span>
-            <button class="mark-as-read" onclick="markAsRead('notif3')">✔</button>
+    <div class="container">
+        <header>
+            <h1>Components</h1>
+            <h2>Journal Universitaire</h2>
+        </header>
+        <div class="posts-grid">
+            <div class="post-card">
+                <img src="../public/assert/IA.jpg" alt="Post Image">
+                <div class="post-category">Cours</div>
+                <div class="post-content">
+                    <h3>Introduction à l'Intelligence Artificielle</h3>
+                    <p>Aujourd'hui, j'ai appris les bases des algorithmes d'apprentissage automatique. C'était fascinant !</p>
+                    <span>9 janvier 2025</span>
+                </div>
+            </div>
+            <div class="post-card">
+                <img src="../public/assert/dej.jpg" alt="Post Image">
+                <div class="post-category">Pause</div>
+                <div class="post-content">
+                    <h3>Pause déjeuner avec les amis</h3>
+                    <p>Nous avons partagé des anecdotes drôles et avons dégusté nos plats favoris à la cafétéria.</p>
+                    <span>9 janvier 2025</span>
+                </div>
+            </div>
+            <div class="post-card">
+                <img src="../public/assert/web.jpg" alt="Post Image">
+                <div class="post-category">Projet</div>
+                <div class="post-content">
+                    <h3>Travail sur le projet de développement web</h3>
+                    <p>Nous avons avancé sur la page d'accueil de notre site. C'était très productif !</p>
+                    <span>9 janvier 2025</span>
+                </div>
+            </div>
+            <div class="post-card">
+                <img src="../public/assert/foot.jpg" alt="Post Image">
+                <div class="post-category">Activité</div>
+                <div class="post-content">
+                    <h3>Participe au tournoi de foot universitaire</h3>
+                    <p>Quelle journée ! Nous avons remporté le match avec un score de 3-1. Une expérience mémorable !</p>
+                    <span>9 janvier 2025</span>
+                </div>
+            </div>
         </div>
     </div>
-
-
-    <script src="./notif.js"></script>
+    <script src="postes.js"></script>
     <script src="../interface_navigation/navigation.js"></script>
 </body>
 </html>
+
