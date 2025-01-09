@@ -108,10 +108,7 @@ body {
 	border-radius: 48px 0 0 48px;
 	
 }
-#sidebar .side-menu li.active {
-	background: var(--grey);
-	position: relative;
-}
+
 #sidebar .side-menu li.active::before {
 	content: '';
 	position: absolute;

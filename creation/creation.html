@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un Post</title>
+    <link rel="stylesheet" href="./creation.css">
+    <link rel="stylesheet" href="../interface_navigation/navigation.css">
+</head>
+<body>
+      
+    <div>
+
+        <!-- SIDEBAR -->
+        <section id="sidebar">
+            <a href="#" class="brand">
+                <span class="text">ESISPACE</span>
+            </a>
+            <ul class="side-menu top">
+                <li class="active">
+                    <a href="../interface_navigation/navigation.html">
+                        <i class='bx bxs-user'></i>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../notifications/notif.html">
+                        <i class='bx bxs-bell'></i>
+                        
+                        <span class="text">Notifications</span>
+                    
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="../créationdecommunauté/création.html">
+                        <i class='bx bxs-group'></i>
+                        <span class="text">Création de communauté</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../message/message.html">
+                        <i class='bx bxs-message-detail'></i>
+                        <span class="text">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../creation/creation.html">
+                        <i class='bx bxs-pencil'></i>
+                        <span class="text">Création de poste</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#customization">
+                        <i class='bx bxs-paint'></i>
+                        <span class="text">Pérsonnalisation</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="side-menu">
+                <li>
+                    <a href="#settings">
+                        <i class='bx bxs-cog'></i>
+                        <span class="text">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="logout">
+                        <i class='bx bxs-log-out-circle'></i>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- SIDEBAR -->
+    
+        <!-- CONTENT -->
+        <section id="content">
+            <!-- NAVBAR -->
+           
+        </div>
+    <div class="container">
+        <header>
+            <h1>Blog Posts</h1>
+            <h2>Ajouter un Nouveau Post</h2>
+        </header>
+
+        <div class="main-content">
+            <!-- Post Editor -->
+            <div class="post-editor">
+                <input type="text" class="post-title" placeholder="Titre de votre post">
+                <div class="editor">
+                    <textarea placeholder="Écrivez votre contenu ici..."></textarea>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="actions">
+                    <h3>Actions</h3>
+                    <p><strong>Status :</strong> Brouillon <a href="#">Modifier</a></p>
+                    <p><strong>Visibilité :</strong> Public <a href="#">Modifier</a></p>
+                    <p><strong>Planification :</strong> Maintenant <a href="#">Modifier</a></p>
+                    <p><strong>Lisibilité :</strong> Bonne</p>
+                    <button class="btn save-draft">Sauvegarder le Brouillon</button>
+                    <button class="btn publish">Publier</button>
+                </div>
+                <div class="categories">
+                    <h3>Catégories</h3>
+                    <label><input type="checkbox" checked> Non catégorisé</label>
+                    <label><input type="checkbox"> Design</label>
+                    <label><input type="checkbox"> Développement</label>
+                    <label><input type="checkbox"> Écriture</label>
+                    <label><input type="checkbox"> Livres</label>
+                    <div class="new-category">
+                        <input type="text" placeholder="Nouvelle catégorie">
+                        <button>+</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script src="./creation.js"></script>
+    <script src="../interface_navigation/navigation.js"></script>
+</body>
+</html>
