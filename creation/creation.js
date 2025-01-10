@@ -9,4 +9,5 @@ document.addEventListener("DOMContentLoaded", () => {
     publishBtn.addEventListener("click", () => {
         alert("Votre post a été publié !");
     });
+    
 });

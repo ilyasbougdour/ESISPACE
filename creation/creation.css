@@ -14,7 +14,6 @@ body {
     margin-top: 5%;
     margin-right: 7%;
     max-width: 1200px;
-    
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -153,4 +152,55 @@ header h2 {
     border-radius: 5px;
     margin-left: 10px;
     cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens less than 1200px (tablets and smaller) */
+@media (max-width: 1200px) {
+    .container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        margin-top: 20px;
+    }
+}
+
+/* For screens less than 768px (mobile phones) */
+@media (max-width: 768px) {
+    body {
+        margin-left: 0;
+    }
+
+    .container {
+        margin-left: 35%;
+        margin-right: 2%;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .post-editor {
+        flex: 1;
+    }
+
+    .sidebar {
+        flex: 1;
+        margin-top: 20px;
+    }
+
+    .sidebar .btn {
+        font-size: 14px;
+    }
+
+    .new-category input, .new-category button {
+        font-size: 14px;
+    }
 }
